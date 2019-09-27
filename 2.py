@@ -8,19 +8,26 @@ Follow-up: what if you can't use division?
 
 '''
 
+'''
+Explanation: 
+Delay where everything is multiplied by everything to the left except itself
+Delay, backwards now, same but multiplied on everything on the right
+'''
+
 
 def fxn(x):
 
 	ret = [1 for i in range(len(x))]
 	rety = [1 for i in range(len(x))]
 
-	p = 1
+
+	p = 1 	# left hand product
 	for i in range(len(x)):
 		ret[i] = p
 		p *= x[i]
 		#print (p)
 
-	p = 1
+	p = 1	# right hand product
 	for i in range(len(x)-1, -1, -1):
 		rety[i] = ret[i]*p
 		p *= x[i]

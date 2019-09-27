@@ -8,6 +8,11 @@ Bonus: Can you do this in one pass?
 
 '''
 
+'''
+Explanation: 
+Store the complement in a set and check at O(1) time
+'''
+
 
 def fxn(l, k):
 
